@@ -74,6 +74,12 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    config = { "\27LJ\2\nF\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0+pikinesquik.plugins.commentnvim_config\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\Denys\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "C:\\Users\\Denys\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
@@ -84,6 +90,12 @@ _G.packer_plugins = {
     path = "C:\\Users\\Denys\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["galaxyline.nvim"] = {
+    config = { "\27LJ\2\nE\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0*pikinesquik.plugins.galaxyline_config\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\Denys\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\galaxyline.nvim",
+    url = "https://github.com/glepnir/galaxyline.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "C:\\Users\\Denys\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
@@ -93,6 +105,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Denys\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp-zero.nvim",
     url = "https://github.com/VonHeikemen/lsp-zero.nvim"
+  },
+  ["lsp_signature.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\Denys\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lsp_signature.nvim",
+    url = "https://github.com/ray-x/lsp_signature.nvim"
   },
   ["mason-lspconfig.nvim"] = {
     loaded = true,
@@ -113,6 +130,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\Denys\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-metals"] = {
+    loaded = true,
+    path = "C:\\Users\\Denys\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-metals",
+    url = "https://github.com/scalameta/nvim-metals"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -152,6 +174,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: galaxyline.nvim
+time([[Config for galaxyline.nvim]], true)
+try_loadstring("\27LJ\2\nE\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0*pikinesquik.plugins.galaxyline_config\frequire\0", "config", "galaxyline.nvim")
+time([[Config for galaxyline.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\nF\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0+pikinesquik.plugins.commentnvim_config\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
