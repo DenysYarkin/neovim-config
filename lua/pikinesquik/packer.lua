@@ -7,16 +7,16 @@ return require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
+
   use {
 	  'nvim-telescope/telescope.nvim', tag = '0.1.5',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use({ 'rose-pine/neovim', as = 'rose-pine' }) 
-
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  
+
   use "nvim-lua/plenary.nvim"
   use {
 	  "ThePrimeagen/harpoon",
@@ -48,8 +48,6 @@ return require('packer').startup(function(use)
   }
   
   use "scalameta/nvim-metals"
-
-
 
   use "nvim-tree/nvim-tree.lua"
   use "nvim-tree/nvim-web-devicons"
