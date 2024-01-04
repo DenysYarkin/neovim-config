@@ -12,5 +12,4 @@ vim.opt.incsearch = true
 
 vim.opt.scrolloff = 8
 
-vim.opt.colorcolumn = "80"
 vim.cmd [[highlight ColorColumn ctermbg=8 guibg=lightgrey]]

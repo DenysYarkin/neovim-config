@@ -12,7 +12,7 @@
 - [Comment.nvim](https://github.com/numToStr/Comment.nvim)
 ### Appearance 
 - [rose-pine](https://github.com/rose-pine/neovim)
-- [galaxyline](https://github.com/nvimdev/galaxyline.nvim)
+- [lualine](https://github.com/nvim-lualine/lualine.nvim)
 - [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
 
 ## LSP

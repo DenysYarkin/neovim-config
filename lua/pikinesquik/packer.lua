@@ -46,21 +46,16 @@ return require('packer').startup(function(use)
 	  "williamboman/mason-lspconfig.nvim",
 	  "neovim/nvim-lspconfig",
   }
-  
+
   use "scalameta/nvim-metals"
 
   use "nvim-tree/nvim-tree.lua"
   use "nvim-tree/nvim-web-devicons"
 
-  use({
-	  "glepnir/galaxyline.nvim",
-	  -- your statusline
-	  config = function()
-		  require("pikinesquik.plugins.galaxyline_config")
-	  end,
- 	  -- some optional icons
-	  requires = { "kyazdani42/nvim-web-devicons", opt = true }
-  })
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
 
   use {
 	  'numToStr/Comment.nvim',

@@ -23,7 +23,6 @@ vim.api.nvim_create_autocmd("FileType", {
   group = nvim_metals_group,
 })
 
-
 metals_config = require("metals").bare_config()
 metals_config.init_options.statusBarProvider = "on"
 
