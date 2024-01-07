@@ -59,9 +59,9 @@ return require('packer').startup(function(use)
 
   use {
 	  'numToStr/Comment.nvim',
-	  config = function()
-		  require('pikinesquik.plugins.commentnvim_config')
-	  end
+	  -- config = function()
+		 --  require('pikinesquik.plugins.commentnvim_config')
+	  -- end
   }
 
   use {
